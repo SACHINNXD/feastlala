@@ -36,13 +36,24 @@
   </main>
 
   <!-- CART OVERLAY -->
-  <div id="cartOverlay" class="cart-overlay"></div>
+<div id="cartOverlay" class="cart-overlay"></div>
 
-  <!-- CART DRAWER -->
-  <aside id="cartDrawer" class="cart-drawer">
-    <div class="cart-header">
-      <h2>Your Cart</h2>
-      <button id="closeCart" class="close-btn">×</button>
+<!-- CART DRAWER -->
+<aside id="cartDrawer" class="cart-drawer">
+  <div class="cart-inner">
+
+    <button id="closeCart" class="cart-close">✕</button>
+
+    <h1 class="cart-title">YOUR BAG</h1>
+
+    <div class="cart-progress">
+      <div class="progress-bar">
+        <span class="progress-fill"></span>
+      </div>
+      <div class="progress-labels">
+        <span>$0</span>
+        <span>$75</span>
+      </div>
     </div>
 
     <div class="cart-body">
@@ -50,11 +61,9 @@
     </div>
 
     <div class="cart-footer">
-      <span>Subtotal</span>
+      <span>SUBTOTAL</span>
       <strong>$0.00</strong>
     </div>
-  </aside>
 
-  <script src="script.js"></script>
-</body>
-</html>
+  </div>
+</aside>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Black Site with Slide Cart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <span class="logo">LOGO</span>
+    </div>
+
+    <div class="nav-right">
+      <button id="cartBtn" class="cart-btn" aria-label="Open cart">
+        <!-- Custom SVG Cart Icon -->
+        <svg viewBox="0 0 24 24" class="cart-icon">
+          <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 
+                   2-.9 2-2-.9-2-2-2zm10 0c-1.1 
+                   0-2 .9-2 2s.9 2 2 2 
+                   2-.9 2-2-.9-2-2-2zM7.2 
+                   14h9.9c.8 0 1.5-.5 1.8-1.2l3-6.1
+                   -1.8-.9-2.6 5.2H7.8L4.1 3H1v2h2l3.6 7.6
+                   -1.3 2.4C4.5 16.4 5.4 18 7.2 18z"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE CONTENT -->
+  <main class="page">
+    <h1>Black Website</h1>
+    <p>Products and add-to-cart will be wired later.</p>
+  </main>
+
+  <!-- CART OVERLAY -->
+  <div id="cartOverlay" class="cart-overlay"></div>
+
+  <!-- CART DRAWER -->
+  <aside id="cartDrawer" class="cart-drawer">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="closeCart" class="close-btn">×</button>
+    </div>
+
+    <div class="cart-body">
+      <p>No items yet.</p>
+    </div>
+
+    <div class="cart-footer">
+      <span>Subtotal</span>
+      <strong>$0.00</strong>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

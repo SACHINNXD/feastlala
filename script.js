@@ -7,11 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("cart-open");
   });
 
-  closeBtn.addEventListener("click", () => {
-    document.body.classList.remove("cart-open");
-  });
+  closeBtn.addEventListener("click", closeCart);
+  overlay.addEventListener("click", closeCart);
 
-  overlay.addEventListener("click", () => {
+  function closeCart() {
     document.body.classList.remove("cart-open");
-  });
+  }
 });
